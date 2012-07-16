@@ -14,6 +14,7 @@ import backtype.storm.tuple.Values;
 
 public class CollectionPoolBolt extends BaseRichBolt {
 	OutputCollector _collector;
+	static Vector<Message> msgVector = new Vector<>();
 
 	@Override
 	public void prepare(Map conf, TopologyContext context,
@@ -25,10 +26,15 @@ public class CollectionPoolBolt extends BaseRichBolt {
 	public void execute(Tuple tuple) {
 
 		Message message = (Message) tuple.getValue(0);
-		Vector<Message> msgVector = new Vector<>();
-		msgVector.add(message);
 
-		_collector.emit(new Values(msgVector));
+		msgVector.add(message);
+		// System.out.println("one message");
+		if (msgVector.size() > 10) {
+			System.out.println(msgVector);
+			_collector.emit(tuple, new Values(msgVector));
+			msgVector.clear();
+			// System.out.println("output!");
+		}
 	}
 
 	@Override
