@@ -25,7 +25,7 @@ import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseRichBolt;
 import backtype.storm.tuple.Tuple;
 
-public class ExclamationBolt extends BaseRichBolt {
+public class ProcessingBolt extends BaseRichBolt {
 	OutputCollector _collector;
 
 	@Override
@@ -45,10 +45,13 @@ public class ExclamationBolt extends BaseRichBolt {
 			KnowledgeRuntimeLogger logger = KnowledgeRuntimeLoggerFactory
 					.newFileLogger(ksession, "test");
 			// go !
-			Iterator<Message> it = ((Vector<Message>) tuple.getValue(0))
-					.iterator();
+			Vector<Message> vectorMsg=(Vector<Message>) tuple.getValue(0);
+			System.out.println(vectorMsg.size());
+			Iterator<Message> it = vectorMsg.iterator();
+			System.out.println(vectorMsg);
 			while (it.hasNext()) {
 				Message message = (Message) it.next();
+//				System.out.println(message.getMessage());
 				ksession.insert(message);
 			}
 			ksession.fireAllRules();
