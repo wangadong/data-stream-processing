@@ -1,9 +1,10 @@
 package storm.dsp.bolt;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import storm.dsp.bolt.Message;
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
@@ -14,7 +15,7 @@ import backtype.storm.tuple.Values;
 
 public class CollectionPoolBolt extends BaseRichBolt {
 	OutputCollector _collector;
-	static Vector<Message> msgVector = new Vector<>();
+	static ArrayList msgList = new ArrayList();
 
 	@Override
 	public void prepare(Map conf, TopologyContext context,
@@ -26,20 +27,21 @@ public class CollectionPoolBolt extends BaseRichBolt {
 	public void execute(Tuple tuple) {
 
 		Message message = (Message) tuple.getValue(0);
+		msgList.add(message);
 
-		msgVector.add(message);
 		// System.out.println("one message");
-		if (msgVector.size() > 10) {
-			System.out.println(msgVector);
-			_collector.emit(tuple, new Values(msgVector));
-			msgVector.clear();
+		if (msgList.size() == 10) {
+			_collector.emit(new Values(new ArrayList(msgList)));
+			_collector.ack(tuple);
+			msgList.clear();
 			// System.out.println("output!");
 		}
+
 	}
 
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
-		declarer.declare(new Fields("collection"));
+		declarer.declare(new Fields("messageList"));
 	}
 
 }
