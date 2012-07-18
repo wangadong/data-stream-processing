@@ -31,7 +31,7 @@ public class CollectionPoolBolt extends BaseRichBolt {
 
 		// System.out.println("one message");
 		if (msgList.size() == 10) {
-			_collector.emit(new Values(new ArrayList(msgList)));
+			_collector.emit(tuple, new Values(new ArrayList(msgList)));
 			_collector.ack(tuple);
 			msgList.clear();
 			// System.out.println("output!");

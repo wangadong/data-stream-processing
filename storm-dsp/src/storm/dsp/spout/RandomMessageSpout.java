@@ -32,11 +32,11 @@ public class RandomMessageSpout extends BaseRichSpout {
 		message.setMessage("Hello World");
 		message.setStatus(Message.HELLO);
 		msgVector.add(message);
-		// message.setMessage("Goodbye");
-		// message.setStatus(Message.GOODBYE);
-		// msgVector.add(message);
-		Message sentence = msgVector.get(_rand.nextInt(msgVector.size()));
-		_collector.emit(new Values(message));
+		message.setMessage("Goodbye");
+		message.setStatus(Message.GOODBYE);
+		msgVector.add(message);
+		Message ranMessage = msgVector.get(_rand.nextInt(msgVector.size()));
+		_collector.emit(new Values(ranMessage));
 	}
 
 	@Override

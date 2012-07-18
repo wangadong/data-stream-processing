@@ -21,10 +21,10 @@ public class DSPTopology {
 	public static void main(String[] args) throws Exception {
 		TopologyBuilder builder = new TopologyBuilder();
 
-		builder.setSpout("source", new RandomMessageSpout(), 100);
-		builder.setBolt("collection", new CollectionPoolBolt(), 10)
+		builder.setSpout("source", new RandomMessageSpout(), 2);
+		builder.setBolt("collection", new CollectionPoolBolt(), 1)
 				.shuffleGrouping("source");
-		builder.setBolt("processing", new ProcessingBolt(), 10).shuffleGrouping(
+		builder.setBolt("processing", new ProcessingBolt(), 1).shuffleGrouping(
 				"collection");
 		Config conf = new Config();
 		conf.setDebug(false);
@@ -37,7 +37,7 @@ public class DSPTopology {
 
 			LocalCluster cluster = new LocalCluster();
 			cluster.submitTopology("test", conf, builder.createTopology());
-			Utils.sleep(100000);
+			Utils.sleep(1000000);
 			cluster.killTopology("test");
 			cluster.shutdown();
 		}
