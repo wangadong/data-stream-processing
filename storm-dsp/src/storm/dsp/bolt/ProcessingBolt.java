@@ -1,8 +1,8 @@
 package storm.dsp.bolt;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Vector;
 
 import org.drools.KnowledgeBase;
 import org.drools.KnowledgeBaseFactory;
@@ -18,7 +18,6 @@ import org.drools.logger.KnowledgeRuntimeLogger;
 import org.drools.logger.KnowledgeRuntimeLoggerFactory;
 import org.drools.runtime.StatefulKnowledgeSession;
 
-import storm.dsp.bolt.Message;
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
@@ -45,13 +44,11 @@ public class ProcessingBolt extends BaseRichBolt {
 			KnowledgeRuntimeLogger logger = KnowledgeRuntimeLoggerFactory
 					.newFileLogger(ksession, "test");
 			// go !
-			Vector<Message> vectorMsg=(Vector<Message>) tuple.getValue(0);
-			System.out.println(vectorMsg.size());
-			Iterator<Message> it = vectorMsg.iterator();
-			System.out.println(vectorMsg);
+			@SuppressWarnings("unchecked")
+			ArrayList<Message> msgList=(ArrayList<Message>) tuple.getValue(0);
+			Iterator<Message> it = msgList.iterator();
 			while (it.hasNext()) {
 				Message message = (Message) it.next();
-//				System.out.println(message.getMessage());
 				ksession.insert(message);
 			}
 			ksession.fireAllRules();
