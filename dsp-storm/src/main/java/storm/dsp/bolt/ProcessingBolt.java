@@ -41,8 +41,8 @@ public class ProcessingBolt extends BaseRichBolt {
 			KnowledgeBase kbase = readKnowledgeBase();
 			StatefulKnowledgeSession ksession = kbase
 					.newStatefulKnowledgeSession();
-			KnowledgeRuntimeLogger logger = KnowledgeRuntimeLoggerFactory
-					.newFileLogger(ksession, "test");
+//			KnowledgeRuntimeLogger logger = KnowledgeRuntimeLoggerFactory
+//					.newFileLogger(ksession, "test");
 			// go !
 			@SuppressWarnings("unchecked")
 			ArrayList<Message> msgList=(ArrayList<Message>) tuple.getValue(0);
@@ -52,7 +52,7 @@ public class ProcessingBolt extends BaseRichBolt {
 				ksession.insert(message);
 			}
 			ksession.fireAllRules();
-			logger.close();
+//			logger.close();
 		} catch (Throwable t) {
 			t.printStackTrace();
 		}
