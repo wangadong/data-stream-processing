@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>config</comment>
+<entry key="TEST_CASE">2</entry>
+<entry key="KAFKA_TOPIC">test</entry>
+<entry key="ALARM_BOLT_NUMBER">1</entry>
+<entry key="MIN_FETCH_INTERVAL">50</entry>
+<entry key="KAFKA_BROKER_URL">192.168.0.179</entry>
+<entry key="WORKER_NUM">5</entry>
+<entry key="KAFKA_ZKROOT">/home/dsp/dsp/zookeeper-3.3.6</entry>
+<entry key="MESSAGE_TOTAL">500000</entry>
+<entry key="PROCESSING_BOLT_NUMBER">6</entry>
+<entry key="ALARM_TO_KAFKA">False</entry>
+<entry key="KAFKA_FORCE_START_OFFSET_TIME">-2</entry>
+<entry key="KAFKA_PARTITION_PER_HOST">1</entry>
+<entry key="KAFKA_ID">id</entry>
+<entry key="KNOWLEDGE_SERVER_IP">192.168.0.179</entry>
+<entry key="SPOUT_NUMBER">1</entry>
+<entry key="MIN_FETCH_SIZE">2000</entry>
+<entry key="DISPATCHER_BOLT_NUMBER">1</entry>
+<entry key="TOPOLOGY_NAME">test</entry>
+<entry key="STORM_DEBUG">False</entry>
+<entry key="KNOWLEDGE_PACKAGE_NAME">DSP</entry>
+<entry key="MESSAGE_PER_SECOND">1000</entry>
+</properties>
