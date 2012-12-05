@@ -1,0 +1,3210 @@
+package DSP;
+global java.util.List list;
+
+rule "dsp_rules_458"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_457"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_456"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_455"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_454"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_453"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_452"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-PROATR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_451"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-DFCHFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_450"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-PREJOLI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_449"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-TRPSSC40"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_448"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_447"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_446"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-CTRLNV"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"动作\",\"bit00_alarm\":\"2\",\"bit01\":\"恢复\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_445"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-CBSDVOL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"有压\",\"bit00_alarm\":\"3\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_444"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCMSWIOFF"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_443"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-FALTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_442"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_441"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS4_5002-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_440"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_439"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-CBSTAETH2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_438"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-CBSTAETH1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_437"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_436"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-RMTAUTO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_435"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_434"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_433"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-BUSVFLT1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_432"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB7_511-WMETER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_431"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_430"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_429"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_428"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_427"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_B3-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_426"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_425"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-ZROSQNPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_424"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS1_5021-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_423"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCBVOLL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_422"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCBVOLH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_421"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-BRKFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_420"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_419"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_418"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_417"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_416"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_415"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_414"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_413"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_412"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_411"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_410"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-CSVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"有压\",\"bit00_alarm\":\"3\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_409"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-PRECHSWI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_408"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCINSWIT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_407"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SELSW4"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_406"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-DIFFPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_405"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-INVTOCP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_404"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-VOLT1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_403"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_402"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_401"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-ZROSQNPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_400"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_399"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-PREVOTRI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_398"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-ECGCOND2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_397"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_396"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-WMETER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_395"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_394"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_393"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_392"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-SELFTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_391"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_390"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-DIFFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_389"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_388"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-AC2LOSPHS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_387"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_386"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-FAlJMTHL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_385"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-ZROSQNPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_384"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-TRP400"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_383"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_382"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCSWIOFF"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_381"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_380"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_379"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHOMP_HOMP-HOSTAT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"中心\",\"bit00_alarm\":\"N/A\",\"bit01\":\"变电所\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_378"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_377"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_376"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_1-TECFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_375"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_11-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_374"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-FEDRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_373"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_372"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS3_5001-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_371"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGA1_50210-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_370"
+    when
+    m:Message(point_name == "deiCQ615PSCADACKZZ_CKZZ-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_369"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_368"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_367"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_366"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-BUSDVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"无压\",\"bit00_alarm\":\"3\",\"bit01\":\"有压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_365"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_364"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_363"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-MCBTRSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_362"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_361"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_360"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-TRAUTTRP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_359"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS6_5111-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_358"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_357"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_1-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_356"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_355"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_354"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-PCJUMPL1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_353"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-PCJUMPL2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_352"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_1-SOTEMALM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_351"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_350"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-ZEROPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_349"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-INTTRPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_348"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-CIRBK36"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_347"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-CIRBK35"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_346"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-CARPOS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"试验位\",\"bit00_alarm\":\"N/A\",\"bit01\":\"工作位\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_345"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_344"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_343"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_342"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCSARFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_341"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-FALPINTL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_340"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_339"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_338"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-ABNMSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_337"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-FALPINTL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_336"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_335"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACPFAIL1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_334"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACPFAIL2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_333"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_332"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGB2_50020-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_331"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_330"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_329"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_328"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_327"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_326"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-DIFFPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_325"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_324"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_323"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_322"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-FTRIFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_321"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-TRADTRP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_320"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_319"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_318"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_317"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-SELFINVE"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_316"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_315"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-HEAVOVER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_314"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_313"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_312"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-BPFASIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_311"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_310"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_309"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-ZROSQNPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_308"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_307"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-FEDRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_306"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_305"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_1-OTEMPTIR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_304"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_303"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_302"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_301"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_300"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-CBSTAETH1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_299"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-CBSTAETH2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_298"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-ABNMSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_297"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_296"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-HETBRALM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_295"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_2-OTEMPTIR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_294"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELAUTO"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelActive\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelExit\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelActive\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_293"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_292"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-DIFFPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_291"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-CBSDVOL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"有压\",\"bit00_alarm\":\"3\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_290"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_289"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-ABNMSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_288"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGC2_51210-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_287"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_286"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_285"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_B5-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_284"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-DFCHFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_283"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_282"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-FEDRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_281"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_280"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGC2_51110-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_279"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_278"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_277"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_276"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_275"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-MCBTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_274"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-ALARM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_273"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_272"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCVOLL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_271"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_1-OTEMPALM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_270"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-FALTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_269"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_268"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-BUSVOLT2"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"NA\",\"bit00_alarm\":\"NA\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"有压\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"NA\"}");
+end
+
+rule "dsp_rules_267"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_A0-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_266"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-BUSVOLT1"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"NA\",\"bit00_alarm\":\"NA\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"有压\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"NA\"}");
+end
+
+rule "dsp_rules_265"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SELSW2"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_264"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SELSW3"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_263"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_262"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SELSW1"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_261"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SELSW4"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_260"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_259"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCONOFF1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_258"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCONOFF2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_257"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS2_5031-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_256"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_255"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACAFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_254"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_253"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCPOWFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_252"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS6_5121-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_251"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-CARPOS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"试验位\",\"bit00_alarm\":\"N/A\",\"bit01\":\"工作位\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_250"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_249"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCARE"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"浮充\",\"bit00_alarm\":\"N/A\",\"bit01\":\"均充\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_248"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-MCBTRSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_247"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_246"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_245"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_244"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_243"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_242"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_241"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCBOVERR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_240"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-CBSTAETH1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_239"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-CBSTAETH2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_238"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_A6-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_237"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_236"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-PREVOTRI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_235"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_234"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_2-TECFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_233"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-CTRLNV"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"动作\",\"bit00_alarm\":\"2\",\"bit01\":\"恢复\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_232"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_231"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_230"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-EXTLATPC"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_229"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SEINFAlS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_228"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_227"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_226"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGA2_50410-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_225"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_224"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACCURFL1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_223"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACCURFL2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_222"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS2_5041-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_221"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCDIS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"充电\",\"bit00_alarm\":\"3\",\"bit01\":\"放电\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_220"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-FEDRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_219"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-BUSDVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"无压\",\"bit00_alarm\":\"3\",\"bit01\":\"有压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_218"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_217"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-WMETER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_216"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_10-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_215"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-FASTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_214"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_213"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_212"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_A4-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_211"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_210"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_209"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGB1_50010-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_208"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCVOLH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_207"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_206"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_205"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_204"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-PROATR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_203"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_202"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-FCIRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_201"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_200"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_199"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-CNT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_198"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_197"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-MCBTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_196"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_195"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-RPOWFAI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_194"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-TRP400"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_193"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_192"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-TRADTRP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_191"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-ECGCOND2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_190"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_189"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_188"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-MCBTRIPT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_187"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_186"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_185"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_B4-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_184"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_183"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_11-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_182"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-RDEVFAI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_181"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACONOFF2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_180"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACONOFF3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_179"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACONOFF1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_178"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-ALLOWCLS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"不允许\",\"bit00_alarm\":\"2\",\"bit01\":\"允许\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_177"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCPOWIN2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"3\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_176"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_175"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-INTTRPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_174"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-DIFASPC1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_173"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-PREJOLI"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_172"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-CBSTAETH2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_171"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-DIFFPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_170"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-ZEROPRO"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_169"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_A5-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_168"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_167"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_166"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-PREABCUP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_165"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-FCIRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_164"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_163"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVOLH2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_162"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_161"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVOLH1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_160"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_159"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_158"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_157"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELSW3"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_156"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELSW2"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_155"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELSW1"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_154"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_153"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-SELSW4"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_152"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_151"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_150"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_4-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_149"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_148"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-FAlJMTHL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_147"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_146"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_145"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-BSIVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"无压\",\"bit00_alarm\":\"3\",\"bit01\":\"有压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_144"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_143"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-WMETER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_142"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SELSW3"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_141"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SELSW2"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_140"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-SELSW1"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_139"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-VOLT2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_138"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACSWIT2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_137"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACSWIT1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_136"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_135"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_134"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-BRKFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_133"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-TRPSSC40"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_132"
+    when
+    m:Message(point_name == "deiCQ615PSCADASTAD_STAD-INHIBIT1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_131"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_130"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-FALPOUTL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_129"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_B7-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_128"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_127"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_126"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_125"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-INVTOCP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_124"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_123"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_122"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-MCBTRIPT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"分位\",\"bit00_alarm\":\"2\",\"bit01\":\"合位\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_121"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_120"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-FALTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_119"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_118"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_117"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_116"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_115"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_2-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_114"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_113"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_112"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_111"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_110"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGA1_50110-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_109"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_108"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-FEDRFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_107"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_2-OTEMPALM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_106"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCPOWIN1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"3\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_105"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVOLL2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_104"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVOLL1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_103"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB7_512-WMETER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_102"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-CTRLNV"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"动作\",\"bit00_alarm\":\"2\",\"bit01\":\"恢复\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_101"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-PCIRSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_100"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_99"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_98"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_97"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_96"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DACLOSPHS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_95"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_94"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-ECGCOND1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_93"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-ECGCOND2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_92"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_91"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-CTRLNV"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"动作\",\"bit00_alarm\":\"2\",\"bit01\":\"恢复\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_90"
+    when
+    m:Message(point_name == "deiCQ615PSCADARVLD_RVLD-INTLOCK"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_89"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_88"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_87"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_86"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-CBSTA1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_85"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-CBSTA2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_84"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACPOWFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_83"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-CIRBK36"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_82"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-DIFFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_81"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_80"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-DIFASPC2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_79"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_78"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SELSW4"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_77"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SELSW1"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_76"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-HEAVOVER"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_75"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SELSW3"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_74"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-SELSW2"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_73"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-ECGCOND2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_72"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B07_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_71"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_70"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DACVOLL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_69"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_68"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DACVOLH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_67"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-CARPOS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"试验位\",\"bit00_alarm\":\"N/A\",\"bit01\":\"工作位\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_66"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_511-SPRCHR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_65"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_64"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SELSW1"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_63"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SELSW2"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_62"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SELSW3"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_61"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-SELSW4"&&type =="DI_INT"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"切换\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_60"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-FALPOUTL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_59"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-SELFCOM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_58"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_57"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_56"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-BSIVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"无压\",\"bit00_alarm\":\"3\",\"bit01\":\"有压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_55"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A05_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_54"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-FORBID"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_53"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_52"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-CSVOLT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"有压\",\"bit00_alarm\":\"3\",\"bit01\":\"无压\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_51"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCRECFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_50"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_49"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB3_412-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_48"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_47"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-OVERPROT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_46"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-CBSTAETH1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"N/A\",\"bit00_alarm\":\"N/A\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_45"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-ABNMSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_44"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-CIRBK35"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_43"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-BRKFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_42"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCDSWIT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_41"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_6-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_40"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVARIN2"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"3\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_39"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-ACVARIN1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"3\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_38"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-MCBTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_37"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-BUSETH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_36"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-GPLSF6"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_35"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCPREFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_34"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-FTRIFAIL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_33"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-BPFASIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_32"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A03_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_31"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-PCIRSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_30"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_502-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_29"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-FALTRIP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_28"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB4_400V_A3-WORKCOND"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"退出\",\"bit00_alarm\":\"2\",\"bit01\":\"投入\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_27"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_3-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_26"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_11-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_25"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-BUSVFLT1"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_24"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-TRAUTTRP"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_23"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_504-PACTSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_22"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_21"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_402-LPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_20"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-MAINT"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_19"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_1-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_18"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-ABNMSIG"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_17"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B04_5-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_16"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHIS1_5011-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_15"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-DCBATTL"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_14"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B03_2-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_13"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A04_7-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_12"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB1_501-INHIBIT3"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"取消屏蔽\",\"bit00_alarm\":\"N/A\",\"bit01\":\"设置屏蔽\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_11"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-SELCB"&&type =="DI_INT2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI_INT2\",\"bit00\":\"DeSelOpn\",\"bit00_alarm\":\"N/A\",\"bit01\":\"DeSelClo\",\"bit01_alarm\":\"N/A\",\"bit10\":\"SelOpn\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_10"
+    when
+    m:Message(point_name == "deiCQ615PSCADAACP1_AC-AC1LOSPHS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_9"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB2_503-EARTH"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"摘牌\",\"bit00_alarm\":\"N/A\",\"bit01\":\"挂牌\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_8"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB5_512-LRSTA"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"就地\",\"bit00_alarm\":\"3\",\"bit01\":\"远方\",\"bit01_alarm\":\"3\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_7"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_A06_9-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_6"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHGA2_50310-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_5"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB2_400-CARPOS"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"试验位\",\"bit00_alarm\":\"N/A\",\"bit01\":\"工作位\",\"bit01_alarm\":\"N/A\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_4"
+    when
+    m:Message(point_name == "deiCQ615PSCADALAF2_B05_8-CBSTA"&&type =="DI2/SOE2"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI2/SOE2\",\"bit00\":\"异常\",\"bit00_alarm\":\"2\",\"bit01\":\"分位\",\"bit01_alarm\":\"3\",\"bit10\":\"合位\",\"bit10_alarm\":\"3\",\"bit11_alarm\":\"2\"}");
+end
+
+rule "dsp_rules_3"
+    when
+    m:Message(point_name == "deiCQ615PSCADATEM1_TEM1_2-SOTEMALM"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_2"
+    when
+    m:Message(point_name == "deiCQ615PSCADAHCB3_500-ZROSQNPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"1\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+rule "dsp_rules_1"
+    when
+    m:Message(point_name == "deiCQ615PSCADALCB1_401-LPR"&&type =="DI1/SOE1"&&value!=0)
+    then
+    list.add("{\"point_name\":\""+m.point_name+"\",\"value\":\""+m.value+"\",\"acquisitionTime\":\""+m.acquisitionTime+"\",\"type\":\"DI1/SOE1\",\"bit00\":\"恢复\",\"bit00_alarm\":\"N/A\",\"bit01\":\"动作\",\"bit01_alarm\":\"2\",\"bit10\":\"N/A\",\"bit10_alarm\":\"N/A\",\"bit11_alarm\":\"N/A\"}");
+end
+
+
